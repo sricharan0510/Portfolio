@@ -23,7 +23,7 @@ const StatsCard = ({ number, label }) => {
 
     const animate = (timestamp) => {
       if (!startTime) startTime = timestamp;
-      const progress = (timestamp - startTime) / 2000; // 2 seconds duration
+      const progress = (timestamp - startTime) / 2000;
 
       if (progress < 1) {
         setCount(Math.min(Math.floor(targetNumber * progress), targetNumber));
@@ -115,13 +115,20 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const response = await emailjs.send(
+      await emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         formData,
         import.meta.env.VITE_PUBLIC_KEY
       );
-      console.log("Email sent successfully:", response);
+
+      await emailjs.send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_REPLY_TEMPLATE_ID,
+        formData, 
+        import.meta.env.VITE_PUBLIC_KEY
+      );
+
       setSubmitStatus("success");
       setFormData({ from_name: "", from_email: "", message: "" });
     } catch (error) {
