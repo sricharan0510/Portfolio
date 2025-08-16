@@ -2,14 +2,14 @@ import { FaAward } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const certifications = [
+  { title: "Oracle Certified Associate, Database", issuer: "Oracle", date: "July, 2025" },
+  { title: "IT Specialist in JavaScript", issuer: "Pearson Vue", date: "July, 2025" },
   { title: "MongoDB Developer Toolkit", issuer: "GeeksForGeeks", date: "Jan, 2025" },
   { title: "JavaScript Essentials", issuer: "Cisco", date: "Dec, 2024" },
-  { title: "Data Base Management System", issuer: "NPTEL", date: "Oct, 2024" },
   { title: "IT Specialist in Java", issuer: "Pearson Vue", date: "July, 2024" },
-  { title: "Full Stack Development", issuer: "TechnicalHub", date: "July, 2024" },
-  { title: "Programming in Java", issuer: "NPTEL", date: "May, 2024" },
   { title: "Azure AI Fundamentals", issuer: "Microsoft", date: "Apr, 2024" },
-  { title: "Web Developer", issuer: "CodSoft", date: "Dec, 2023" },
+  { title: "Data Base Management System", issuer: "NPTEL", date: "Oct, 2024" },
+  { title: "Programming in Java", issuer: "NPTEL", date: "May, 2024" },
 ];
 
 export default function Certifications() {

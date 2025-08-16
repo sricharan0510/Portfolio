@@ -13,21 +13,12 @@ import Reveal from './Reveal';
 
 const projectsData = [
   {
-    img: project6,
-    title: "Chatly ",
-    description: "An AI Based ChatBot using React.js and Gemini.",
-    links: {
-      site: "",
-      github: ""
-    },
-  },
-  {
     img: project1,
-    title: "Expenses tracker",
+    title: "Finance Flow",
     description: "Smart Expense Tracker for Easy Budget Management.",
     links: {
-      site: "",
-      github: "",
+      site: "finance-flow-flame-nu.vercel.app",
+      // github: "https://github.com/sricharan0510/FinanceFlow",
     },
   },
   {
@@ -35,7 +26,7 @@ const projectsData = [
     title: "Bus Tracker",
     description: "Efficient College Bus Management for Safe Travel.",
     links: {
-      site: "",
+      site: "https://busgps-1c9a3.web.app/",
       github: "",
     },
   },
@@ -45,6 +36,16 @@ const projectsData = [
     description: "All-in-one platform for sports event management",
     links: {
       github: "",
+      site: "https://sports-mania-912v.vercel.app/"
+    },
+  },
+  {
+    img: project6,
+    title: "Chatly ",
+    description: "An AI Based ChatBot using React.js and Gemini.",
+    links: {
+      site: "",
+      github: ""
     },
   },
   {
